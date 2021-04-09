@@ -1,0 +1,85 @@
+// Base CSS
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #edebed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+// Header
+header {
+  margin: auto;
+}
+
+.title {
+  margin-top: 0;
+  padding: 10px 0 10px 0;
+  letter-spacing: 1pt;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(300deg, #536bff 0, #292a73);
+  border-bottom: 4px solid #f4c700;
+}
+
+// Card
+main {
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 90px 0 90px;
+}
+
+.card {
+  width: 30%;
+  padding: 15px;
+}
+
+.card__image-container {
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card__image-container:hover {
+  transform: scale(1.1);
+}
+
+.card__image {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__title {
+  color: rgb(103, 188, 216);
+}
+
+.card__text {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 2px 2px 10px #000;
+}
+
+.card__desc {
+  text-align: justify;
+  font-size: .85rem;
+}
